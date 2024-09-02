@@ -1,42 +1,51 @@
-body{
-	background-color: #ffffff;
-}
-.cardImpar{
+.container {
     width: 100px;
     height: 150px;
-    background-color: #eeeff2;
-    border-left: 10px dotted #D0D0FF;
-    margin-right: 10px;
-    float: left;
     display: flex;
-    font-family: Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
     font-size: 40px;
-
-}
-.cardPar{
-    width: 100px;
-    height: 150px;
+    font-family: Tahoma, sans-serif;
     background-color: #eeeff2;
     border-left: 10px dotted #D0D0FF;
+    padding-left: 10px;
+    cursor: pointer;
     margin-right: 10px;
-    float: left;
-    display: flex;
-    font-family: Tahoma, sans-serif;
-    font-size: 40px;
-
 }
-.cardFinal {
-    width: 100px;
-    height: 150px;
+
+.impar {
+    background-color: #dfe1e7;
+}
+
+.impar:hover {
+    background-color: yellow;
+    color: goldenrod;
+}
+
+.par {
     background-color: #eeeff2;
-    border-left: 10px dotted #D0D0FF;
+}
+
+.par:hover {
+    background-color: yellow;
+    color: goldenrod;
+}
+
+.final {
     position: absolute;
-    bottom: 0;
     right: 0;
-    font-family: Tahoma, sans-serif;
-    font-size: 40px;
-
+    bottom: 0;
+    margin: 0;
 }
 
+.final:hover {
+    background-color: yellow;
+    color: goldenrod;
+}
 
-
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    background-color: #fff;
+}
